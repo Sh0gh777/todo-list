@@ -1,0 +1,10 @@
+<p>parent works!</p>
+<app-child *ngFor="let car of cars" [car]="carP" (carEventEmitter)="bar($event)"></app-child>    
+
+
+<input [(ngModel)]="make">
+<input [(ngModel)]="year">
+<input [(ngModel)]="color">
+<input [(ngModel)]="door">
+
+<button (click)="makeCar()">Create</button>
